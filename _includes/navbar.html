@@ -1,0 +1,58 @@
+<!--Navbar-->
+<nav
+  class="navbar fixed-top navbar-expand-lg navbar-dark elegant-color scrolling-navbar"
+>
+  <!-- Navbar brand -->
+  <a class="navbar-brand" href="{{ "/" | relative_url }}">{{ site.navbar.brand }}</a>
+
+  <!-- Collapse button -->
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#basicExampleNav"
+    aria-controls="basicExampleNav"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Collapsible content -->
+  <div class="collapse navbar-collapse" id="basicExampleNav">
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">
+      {% if page.url == '/' %}
+      <li class="nav-item active">
+        <span class="nav-link">Home<span class="sr-only">(current)</span></span>
+      </li>
+      {% else %}
+      <li class="nav-item">
+        <a class="nav-link" href="/">Home</a>
+      </li>
+      {% endif %}
+
+      {% for item in {{ site.pages | sort: "navigation_weight" %}
+      {% if item.navigation_weight %}
+        <li {% if item.url == page.url %}class="nav-item active"{% else %}class="nav-item"{% endif %}>
+          <a href="{{ item.url }}" class="nav-link">{{ item.title }}</a>
+        </li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+    <!-- Links -->
+
+    <form class="form-inline">
+      <div class="md-form my-0">
+        <input
+          class="form-control mr-sm-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+      </div>
+    </form>
+  </div>
+  <!-- Collapsible content -->
+</nav>
+<!--/.Navbar-->

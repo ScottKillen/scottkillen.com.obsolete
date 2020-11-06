@@ -1,0 +1,44 @@
+---
+layout: default
+---
+
+<main class="container mt-5 pt-5 home">
+  <section id="introduction">
+
+    <!-- Site Title
+================================================== -->
+    <div class="mainheading">
+      <h1 class="sitetitle primary-heading">{{ site.title }}</h1>
+      <p class="lead">
+        {{ site.description }}
+      </p>
+    </div>
+
+    <section id="posts" class="mb-4">
+      <div class="section-title secondary-heading mb-4">
+
+      </div>
+      {% for post in paginator.posts %}
+      {% assign remainder = forloop.index0 | modulo: 3 %}
+      {% if remainder == 0 %}
+      <div class="card-deck mb-3">
+        {% endif %}
+        {% include post_card.html %}
+        {% if remainder > 1 %}
+      </div>
+      {% endif %}
+      {% endfor %}
+      {% if remainder == 0 %}
+      <div class="card blank"></div>
+      {% endif %}
+      {% if remainder != 2 %}
+      <div class="card blank"></div>
+      </div>
+      {% endif %}
+    </section>
+
+    {% if paginator.total_pages > 1 %}
+    {%include pagination.html %}
+    {% endif %}
+
+</main>

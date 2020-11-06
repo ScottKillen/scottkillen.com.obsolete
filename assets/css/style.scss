@@ -1,0 +1,24 @@
+---
+---
+
+.primary-heading {
+  font-size: 2.7rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.secondary-heading {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding-bottom: 0.3rem;
+}
+
+.section-title.secondary-heading {
+  border-bottom-color: rgba(0, 0, 0, 0.2);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+
+.card-deck .card.blank {
+  box-shadow: none;
+}

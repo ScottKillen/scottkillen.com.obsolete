@@ -1,0 +1,83 @@
+<!-- Footer -->
+<footer class="page-footer font-small mdb-color pt-4">
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+    <!-- Footer links -->
+    <div class="row text-center text-md-left mt-3 pb-3">
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold">
+          {{ site.footer.company-name }}
+        </h6>
+        <p>{{ site.footer.description }}</p>
+      </div>
+      <!-- Grid column -->
+
+      <hr class="w-100 clearfix d-md-none" />
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold">
+          {{ site.footer.second-col-header }}
+        </h6>
+        {% for link in site.footer.second-col-links %}
+        <p>
+          <a href="{{ link.url }}">{{ link.name }}</a>
+        </p>
+        {% endfor %}
+      </div>
+      <!-- Grid column -->
+
+      <hr class="w-100 clearfix d-md-none" />
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold">
+          {{ site.footer.third-col-header }}
+        </h6>
+        {% for link in site.footer.third-col-links %}
+        <p>
+          <a href="{{ link.url }}">{{ link.name }}</a>
+        </p>
+        {% endfor %}
+      </div>
+
+      <!-- Grid column -->
+      <hr class="w-100 clearfix d-md-none" />
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold">
+          {{ site.footer.contact.heading }}
+        </h6>
+        {% for detail in site.footer.contact.details %} {{ detail }} {% endfor
+        %}
+      </div>
+      <!-- Grid column -->
+    </div>
+    <!-- Footer links -->
+
+    <hr />
+
+    <!-- Grid row -->
+    <div class="row d-flex align-items-center">
+      <!-- Grid column -->
+      <div class="col-md-7 col-lg-8">
+        <!--Copyright-->
+        <p class="text-center text-md-left">
+          {{ site.footer.copyright }}
+        </p>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-5 col-lg-4 ml-lg-0">
+        {% include social.html %}
+      </div>
+      <!-- Grid column -->
+    </div>
+    <!-- Grid row -->
+  </div>
+  <!-- Footer Links -->
+</footer>
+<!-- Footer -->
