@@ -1,0 +1,6 @@
+{
+    "files.exclude": {
+        "**/.jekyll-cache": true,
+        "**/*.gem": true
+    }
+}
