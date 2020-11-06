@@ -1,0 +1,37 @@
+<style>
+  .lunrsearchresult .title {
+    color: #d9230f;
+  }
+  .lunrsearchresult .url {
+    color: silver;
+  }
+  .lunrsearchresult a {
+    display: block;
+    color: #777;
+  }
+  .lunrsearchresult a:hover,
+  .lunrsearchresult a:focus {
+    text-decoration: none;
+  }
+  .lunrsearchresult a:hover .title {
+    text-decoration: underline;
+  }
+</style>
+
+<form
+  class="form-inline bd-search"
+  onSubmit="return lunr_search(document.getElementById('lunrsearch').value);"
+>
+  <div class="md-form my-0">
+    <input
+      class="form-control mr-sm-2 launch-modal-search"
+      id="lunrsearch"
+      name="q"
+      maxlength="255"
+      value=""
+      type="search"
+      placeholder="Search"
+      aria-label="Search"
+    />
+  </div>
+</form>

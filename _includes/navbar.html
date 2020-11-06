@@ -1,9 +1,9 @@
 <!--Navbar-->
 <nav
-  class="navbar fixed-top navbar-expand-lg navbar-dark elegant-color scrolling-navbar"
+  class="navbar fixed-top navbar-expand-lg navbar-dark elegant-color"
 >
   <!-- Navbar brand -->
-  <a class="navbar-brand" href="{{ "/" | relative_url }}">{{ site.navbar.brand }}</a>
+  <a class="navbar-brand" href="{{ "/" | relative_url }}"><img src="{{ "/assets/img/navbar_logo.png" | relative_url }}" alt="Brand" /></a>
 
   <!-- Collapse button -->
   <button
@@ -19,7 +19,7 @@
   </button>
 
   <!-- Collapsible content -->
-  <div class="collapse navbar-collapse" id="basicExampleNav">
+  <div class="collapse navbar-collapse" id="collapsibleNav">
     <!-- Links -->
     <ul class="navbar-nav mr-auto">
       {% if page.url == '/' %}
@@ -32,27 +32,21 @@
       </li>
       {% endif %}
 
-      {% for item in {{ site.pages | sort: "navigation_weight" %}
-      {% if item.navigation_weight %}
+      {% for item in site.data.navbar.links %}
         <li {% if item.url == page.url %}class="nav-item active"{% else %}class="nav-item"{% endif %}>
           <a href="{{ item.url }}" class="nav-link">{{ item.title }}</a>
         </li>
-      {% endif %}
       {% endfor %}
     </ul>
     <!-- Links -->
 
-    <form class="form-inline">
-      <div class="md-form my-0">
-        <input
-          class="form-control mr-sm-2"
-          type="search"
-          placeholder="Search"
-          aria-label="Search"
-        />
-      </div>
-    </form>
+    {% include search-lunr.html %}
+
   </div>
   <!-- Collapsible content -->
 </nav>
 <!--/.Navbar-->
+
+<div id="lunrsearchresults">
+    <ul></ul>
+</div>
