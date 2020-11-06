@@ -35,7 +35,7 @@ twitter:
   username: scottkillen
   card: summary
 
-logo: /assets/img/logo.svg
+logo: /assets/img/logo.png
 
 social:
   name: Scott Killen
@@ -52,7 +52,6 @@ social:
 #  alexa: 1234
 #  yandex: 1234
 #  baidu: 1234
-
 
 navbar:
   brand: Navbar
@@ -90,22 +89,22 @@ footer:
       - <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
       - <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
   copyright: >
-     © 2020 Copyright: <a href="/">
-     <strong> Github User</strong></a>
+    © 2020 Copyright: <a href="/">
+    <strong> Github User</strong></a>
 
 paginate: 6
 paginate_path: "/page/:num/"
 
 # date format
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
-date_format: "%b %-d, %Y"
-
+date_format:
+  "%b %-d, %Y"
   # generate social links in footer
 social_links:
   twitter: scottkillen
-  github:  scottkillen
+  github: scottkillen
   devto: scottkillen
-  flickr:   scottkillen
+  flickr: scottkillen
   instagram: scottdkillen
 
   # Mastodon instances
@@ -114,7 +113,6 @@ social_links:
   #  instance: example.com
   # - username: jekyll2
   #   instance: example.com
-
   # GitLab instances
   # gitlab:
   # - username: jekyll
@@ -123,12 +121,11 @@ social_links:
   #   instance: example.com
 
 plugins:
-- jekyll-feed
-- jekyll-seo-tag
-- jekyll-paginate
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-paginate
 
 include: ["_pages"]
-
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
