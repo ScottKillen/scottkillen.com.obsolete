@@ -22,3 +22,20 @@
 .card-deck .card.blank {
   box-shadow: none;
 }
+
+.lunrsearchresult {
+  .url {
+    color: silver;
+  }
+  a {
+    display: block;
+    color: #777;
+  }
+  a:hover,
+  a:focus {
+    text-decoration: none;
+  }
+  a:hover .title {
+    text-decoration: underline;
+  }
+}
