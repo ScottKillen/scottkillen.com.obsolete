@@ -41,10 +41,11 @@ social:
   name: Scott Killen
   links:
     - https://twitter.com/scottkillen
-    - https://github.com/scottkillen
+    - https://github.com/ScottKillen
     - https://dev.to/scottkillen
     - https://www.flickr.com/photos/scottkillen
     - https://www.instagram.com/scottdkillen/
+    - https://www.deviantart.com/skillen
 
 #webmaster_verifications:
 #  google: 1234
@@ -99,26 +100,6 @@ paginate_path: "/page/:num/"
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
 date_format:
   "%b %-d, %Y"
-  # generate social links in footer
-social_links:
-  twitter: scottkillen
-  github: scottkillen
-  devto: scottkillen
-  flickr: scottkillen
-  instagram: scottdkillen
-
-  # Mastodon instances
-  # mastodon:
-  # - username: jekyll
-  #  instance: example.com
-  # - username: jekyll2
-  #   instance: example.com
-  # GitLab instances
-  # gitlab:
-  # - username: jekyll
-  #  instance: example.com
-  # - username: jekyll2
-  #   instance: example.com
 
 plugins:
   - jekyll-feed

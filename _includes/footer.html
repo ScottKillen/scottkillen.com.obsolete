@@ -6,10 +6,19 @@
     <div class="row text-center text-md-left mt-3 pb-3">
       <!-- Grid column -->
       <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-        <h6 class="text-uppercase mb-4 font-weight-bold">
-          {{ site.footer.company-name }}
-        </h6>
-        <p>{{ site.footer.description }}</p>
+        <h6 class="text-uppercase mb-4 font-weight-bold">Scott Killen</h6>
+        <p>
+          Scott loves making people laugh and lives on the cutting edge of
+          sanity.
+        </p>
+        <p>
+          He's a husband, father, son, and brother. He's a follower of Jesus,
+          the Messiah and loves the truth. He preaches
+          <a href="https://edistochurch.org"><strong>here</strong></a> and works
+          as a CPA <a href="https://killencpa.com"><strong>here</strong></a
+          >.
+        </p>
+        <p>👀🤵👨👦👦🏼👣📖†💰</p>
       </div>
       <!-- Grid column -->
 
@@ -17,14 +26,31 @@
 
       <!-- Grid column -->
       <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-        <h6 class="text-uppercase mb-4 font-weight-bold">
-          {{ site.footer.second-col-header }}
-        </h6>
-        {% for link in site.footer.second-col-links %}
+        <h6 class="text-uppercase mb-4 font-weight-bold">Tools</h6>
         <p>
-          <a href="{{ link.url }}">{{ link.name }}</a>
+          <a href="https://code.visualstudio.com/"
+            ><img
+              class="mr-2"
+              src="https://www.google.com/s2/favicons?domain=code.visualstudio.com"
+            />Visual Studio Code</a
+          >
         </p>
-        {% endfor %}
+        <p>
+          <a href="https://www.quickaccesspopup.com/"
+            ><img
+              class="mr-2"
+              src="https://www.google.com/s2/favicons?domain=quickaccesspopup.com"
+            />Quick Access Popup</a
+          >
+        </p>
+        <p>
+          <a href="https://jekyllrb.com/"
+            ><img
+              class="mr-2"
+              src="https://www.google.com/s2/favicons?domain=jekyllrb.com"
+            />Jekyll</a
+          >
+        </p>
       </div>
       <!-- Grid column -->
 
@@ -32,14 +58,17 @@
 
       <!-- Grid column -->
       <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-        <h6 class="text-uppercase mb-4 font-weight-bold">
-          {{ site.footer.third-col-header }}
-        </h6>
-        {% for link in site.footer.third-col-links %}
+        <h6 class="text-uppercase mb-4 font-weight-bold">Useful Links</h6>
         <p>
-          <a href="{{ link.url }}">{{ link.name }}</a>
+          <a href="https://github.com/ScottKillen/dotfiles"
+            >💾 My config files</a
+          >
         </p>
-        {% endfor %}
+        <p>
+          <a href="https://github.com/ScottKillen/userstyles"
+            >👨‍🎨 My user themes</a
+          >
+        </p>
       </div>
 
       <!-- Grid column -->
@@ -47,33 +76,32 @@
 
       <!-- Grid column -->
       <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-        <h6 class="text-uppercase mb-4 font-weight-bold">
-          {{ site.footer.contact.heading }}
-        </h6>
-        {% for detail in site.footer.contact.details %} {{ detail }} {% endfor
-        %}
+        <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+        <p><i class="fad fa-home mr-3"></i>Yonges Island, SC, US</p>
+        <p><i class="fad fa-at mr-3"></i>scott@scottkillen.com</p>
       </div>
       <!-- Grid column -->
     </div>
     <!-- Footer links -->
 
-    <hr />
+    <hr class="border-bottom" />
 
     <!-- Grid row -->
     <div class="row d-flex align-items-center">
       <!-- Grid column -->
       <div class="col-md-7 col-lg-8">
         <!--Copyright-->
+        {% assign end_date = site.time | date: '%Y' %}
         <p class="text-center text-md-left">
-          {{ site.footer.copyright }}
+          &copy; Copyright 2020{% if end_date != "2020" %}&ndash;{{ end_date
+          }}{% endif %} <a href="/"><strong>Scott Killen.</strong></a> All
+          Rights Reserved.
         </p>
       </div>
       <!-- Grid column -->
 
       <!-- Grid column -->
-      <div class="col-md-5 col-lg-4 ml-lg-0">
-        {% include social.html %}
-      </div>
+      <div class="col-md-5 col-lg-4 ml-lg-0">{% include social.html %}</div>
       <!-- Grid column -->
     </div>
     <!-- Grid row -->
