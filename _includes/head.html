@@ -12,6 +12,8 @@
 
   {% feed_meta %}
 
+  {% include favicon.html %}
+
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
     {%- include google-analytics.html -%}
   {%- endif -%}

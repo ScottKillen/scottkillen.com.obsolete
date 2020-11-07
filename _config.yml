@@ -96,11 +96,6 @@ footer:
 paginate: 6
 paginate_path: "/page/:num/"
 
-# date format
-# refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
-date_format:
-  "%b %-d, %Y"
-
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
