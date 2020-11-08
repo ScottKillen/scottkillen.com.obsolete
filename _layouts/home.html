@@ -8,16 +8,14 @@ layout: default
     <!-- Site Title
 ================================================== -->
     <div class="mainheading">
-      <h1 class="sitetitle primary-heading">{{ site.title }}</h1>
+      <h1>{{ site.title }}</h1>
       <p class="lead">
         {{ site.description }}
       </p>
     </div>
 
     <section id="posts" class="mb-4">
-      <div class="section-title secondary-heading mb-4">
-
-      </div>
+      <hr class="mb-4" />
       {% for post in paginator.posts %}
       {% assign remainder = forloop.index0 | modulo: 3 %}
       {% if remainder == 0 %}
