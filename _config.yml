@@ -54,45 +54,6 @@ social:
 #  yandex: 1234
 #  baidu: 1234
 
-navbar:
-  brand: Navbar
-
-footer:
-  company-name: Company Name
-  description: > # this means to ignore newlines until next key
-    Company description or
-    address.
-  second-col-header: Products
-  second-col-links:
-    - name: Link 1
-      url: /
-    - name: Link 2
-      url: /
-    - name: Link 3
-      url: /
-    - name: Link 4
-      url: /
-  third-col-header: Useful Links
-  third-col-links:
-    - name: Link 1
-      url: /
-    - name: Link 2
-      url: /
-    - name: Link 3
-      url: /
-    - name: Link 4
-      url: /
-  contact:
-    heading: Contact
-    details:
-      - <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
-      - <p><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
-      - <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
-      - <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
-  copyright: >
-    © 2020 Copyright: <a href="/">
-    <strong> Github User</strong></a>
-
 paginate: 6
 paginate_path: "/page/:num/"
 
