@@ -27,3 +27,15 @@ footer {
     border-top-color: #3b465e;
   }
 }
+
+.navbar-brand svg {
+  height: 30px;
+  width: 30px;
+  margin-right: .25rem !important;
+  circle {
+    stroke: #9e9e9e;
+  }
+  path {
+    fill: #9e9e9e;
+  }
+}

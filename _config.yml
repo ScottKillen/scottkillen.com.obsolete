@@ -62,7 +62,12 @@ plugins:
   - jekyll-seo-tag
   - jekyll-paginate
 
-include: ["_pages"]
+include:
+  - _pages/
+
+exclude:
+  - _artwork/
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
