@@ -49,3 +49,13 @@ footer {
     }
   }
 }
+
+@media print {
+  footer {
+    svg {
+      path {
+        fill: #000;
+      }
+    }
+  }
+}

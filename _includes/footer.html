@@ -3,7 +3,7 @@
   <!-- Footer Links -->
   <div class="container text-center text-md-left">
     <!-- Footer links -->
-    <div class="row text-center text-md-left mt-3 pb-3">
+    <div class="row text-center text-md-left mt-3 pb-3 d-print-none">
       <!-- Grid column -->
       <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
         <h6 class="text-uppercase mb-4 font-weight-bold">Scott Killen</h6>
@@ -150,7 +150,9 @@
       <!-- Grid column -->
 
       <!-- Grid column -->
-      <div class="col-md-5 col-lg-4 ml-lg-0">{% include social.html %}</div>
+      <div class="col-md-5 col-lg-4 ml-lg-0 d-print-none">
+        {% include social.html %}
+      </div>
       <!-- Grid column -->
     </div>
     <!-- Grid row -->

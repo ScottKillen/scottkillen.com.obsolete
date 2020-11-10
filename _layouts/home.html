@@ -12,7 +12,7 @@ layout: default
   </div>
 </section>
 
-<section id="posts" class="mb-4">
+<section id="posts" class="mb-4 d-print-none">
   <hr class="mb-4" />
   {% for post in paginator.posts %}
   {% assign remainder = forloop.index0 | modulo: 3 %}
