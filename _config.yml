@@ -64,6 +64,7 @@ plugins:
 
 include:
   - _pages/
+  - _tags/
 
 exclude:
   - _artwork/
