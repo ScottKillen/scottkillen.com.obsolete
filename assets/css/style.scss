@@ -67,6 +67,11 @@ footer {
   }
 }
 
+#chartdiv {
+  width: 100%;
+  height: 600px;
+}
+
 @media print {
   footer {
     svg {
