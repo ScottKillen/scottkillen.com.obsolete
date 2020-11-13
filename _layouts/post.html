@@ -1,0 +1,56 @@
+---
+layout: default
+---
+
+<div class="row">
+  <div class="col-lg-9">
+    <div class="mainheading">
+      <!-- Post Title -->
+      <h1 class="posttitle">{{ page.title }}</h1>
+      <p>
+        <small>
+          <span class="post-date"
+            >Posted
+            <time
+              class="post-date"
+              datetime="{{ page.date | date_to_xmlschema }}"
+              >{{ page.date | date: "%B %-d, %Y" }}</time
+            ></span
+          >
+          {% if page.last_modified_at %} (Updated:
+          <time
+            datetime="{{ page.last_modified_at | date_to_xmlschema }}"
+            itemprop="dateModified"
+            >{{ page.last_modified_at | date: "%B %-d, %Y" }}</time
+          >) {% endif %}
+        </small>
+      </p>
+      <hr />
+    </div>
+
+    <!-- Post Featured Image -->
+    {% if page.image %} <img class="featured-image img-fluid mb-4" src="{% if
+    page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{
+    page.image }}{% endif %}" alt="{{ page.title }}"> {% endif %}
+    <!-- End Featured Image -->
+
+    <div class="article-post">{{content}}</div>
+    <hr />
+    <p class="end-logo text-center">{% include logo.svg %}</p>
+  </div>
+  <div class="col-md-3 pr-0 post-tags d-print-none">
+    <div class="card my-4">
+      <h5 class="card-header">Tags<h5>
+      <div class="card-body">
+        <ul class="tags list-unstyled mb-0">
+        {% assign sortedTags = page.tags | sort %}
+        {% for tag in sortedTags %}
+          <li class="badge">
+            <a class="deco-none" href="{{site.baseurl}}/tags/{{ tag | slugify }}" >{{ tag | slugify }}</a>
+          </li>
+        {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
