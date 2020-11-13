@@ -40,6 +40,17 @@ footer {
   }
 }
 
+a.deco-none {
+  color: inherit;
+  text-decoration: none;
+}
+
+.end-logo {
+  svg {
+    height: 3em;
+  }
+}
+
 footer {
   svg {
     height: 1em;
@@ -47,6 +58,12 @@ footer {
     .fa-secondary {
       opacity:.4;
     }
+  }
+}
+
+.tags {
+  .badge {
+    background-color: #9e9e9e;
   }
 }
 
