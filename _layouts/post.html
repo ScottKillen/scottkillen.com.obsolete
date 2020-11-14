@@ -46,7 +46,8 @@ layout: default
         {% assign sortedTags = page.tags | sort %}
         {% for tag in sortedTags %}
           <li class="badge">
-            <a class="deco-none" href="{{site.baseurl}}/tags/{{ tag | slugify }}" >{{ tag | slugify }}</a>
+            {% assign tag_slug = tag | slugify %}
+            <a class="deco-none" href="{{site.baseurl}}/tags/{{ tag_slug }}" >{{ tag_slug }}</a>
           </li>
         {% endfor %}
         </ul>
