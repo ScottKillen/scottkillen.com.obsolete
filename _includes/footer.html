@@ -94,8 +94,7 @@
         <!--Copyright-->
         {% assign end_date = site.time | date: '%Y' %}
         <p class="text-center text-md-left">
-          {% include copyright.svg %} 2020{% if end_date != "2020" %}&ndash;{{
-          end_date }}{% endif %}
+          {%- include copyright.svg %} 2018&ndash;{{ end_date }}
           <a href="/"><strong>Scott Killen.</strong></a> All Rights Reserved.
         </p>
       </div>
@@ -103,7 +102,7 @@
 
       <!-- Grid column -->
       <div class="col-md-5 col-lg-4 ml-lg-0 d-print-none">
-        {% include social.html %}
+        {%- include social.html -%}
       </div>
       <!-- Grid column -->
     </div>
