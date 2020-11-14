@@ -30,8 +30,8 @@ layout: default
 
     <!-- Post Featured Image -->
     {% if page.image %} <img class="featured-image img-fluid mb-4" src="{% if
-    page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{
-    page.image }}{% endif %}" alt="{{ page.title }}"> {% endif %}
+    page.image contains "://" %}{{ page.image }}{% else %}{{ page.image | ralative_url
+    }}{% endif %}" alt="{{ page.title }}"> {% endif %}
     <!-- End Featured Image -->
 
     <div class="article-post">{{content}}</div>
