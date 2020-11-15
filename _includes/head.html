@@ -5,15 +5,32 @@
     content="width=device-width, initial-scale=1, shrink-to-fit=no"
   />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
-  {% seo %}
-  {%- include stylesheets.html -%}
-  <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml">
-  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
-  {%- include favicon.html -%}
-  {%- if jekyll.environment == 'production' -%}
-    {%- include google-analytics.html -%}
-  {%- endif -%}
-  {% comment %}
-  <script src="https://kit.fontawesome.com/6057e12a2b.js" crossorigin="anonymous"></script>
-  {% endcomment %}
+  {% seo %} {%- if page.layout == 'home' -%}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "url": "https://www.scottkillen.com",
+      "logo": "{{ "/assets/img/logo.svg" | relative_url }}"
+    }
+  </script>
+  {%- endif -%} {%- include stylesheets.html -%}
+  <link
+    rel="alternate"
+    type="application/rss+xml"
+    href="{{ site.url }}/feed.xml"
+  />
+  <link
+    rel="sitemap"
+    type="application/xml"
+    title="Sitemap"
+    href="/sitemap.xml"
+  />
+  {%- include favicon.html -%} {%- if jekyll.environment == 'production' -%} {%-
+  include google-analytics.html -%} {%- endif -%} {%- comment %}
+  <script
+    src="https://kit.fontawesome.com/6057e12a2b.js"
+    crossorigin="anonymous"
+  ></script>
+  {% endcomment -%}
 </head>
