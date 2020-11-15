@@ -47,12 +47,7 @@ social:
     - https://www.instagram.com/scottdkillen/
     - https://www.deviantart.com/skillen
 
-#webmaster_verifications:
-#  google: 1234
-#  bing: 1234
-#  alexa: 1234
-#  yandex: 1234
-#  baidu: 1234
+permalink: /:categories/:title/
 
 paginate: 6
 paginate_path: "/page/:num/"
