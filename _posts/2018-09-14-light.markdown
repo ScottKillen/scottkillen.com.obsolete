@@ -7,36 +7,36 @@ image: /assets/img/bowen-island-sunset-620x.jpg
 comments: true
 ---
 
-I sit beneath Your radiance,<br />
-oblivious to life<br />
+I sit beneath Your radiance, <br />
+oblivious to life <br />
 except where the shadows end.<br />
 
-You light my path,<br />
-the sun dead by comparison.<br />
+You light my path, <br />
+the sun dead by comparison. <br />
 My feet find purchase.<br />
 
-I remember the darkness,<br />
-life before You,<br />
+I remember the darkness, <br />
+life before You, <br />
 the vestigial wisp of night.<br />
 
-I am warm.<br />
-My soul fills itself<br />
+I am warm. <br />
+My soul fills itself <br />
 with Your refulgent song.<br />
 
-Love, the abiding tree<br />
-basks in Your glow,<br />
+Love, the abiding tree <br />
+basks in Your glow, <br />
 full of healing fruit that is ever ripe.<br />
 
-The moon dances with the sun<br />
-circling in orbit,<br />
+The moon dances with the sun <br />
+circling in orbit, <br />
 learning Your lessons.<br />
 
-I am enthralled by Your light,<br />
-examining, searching,<br />
+I am enthralled by Your light, <br />
+examining, searching, <br />
 knowing it will quell every doubt.<br />
 
-You are my daydream,<br />
-lighting my life,<br />
+You are my daydream, <br />
+lighting my life, <br />
 washing the shadows away.
 
 {% extRef *John 1:9-13* | "https://www.biblegateway.com/passage/?search=John+1%3A9-13" %}
