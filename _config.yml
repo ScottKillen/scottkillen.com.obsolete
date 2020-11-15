@@ -23,7 +23,7 @@ tagline: Scott Killen's blog
 description: > # this means to ignore newlines until next key
   Scott Killen's blog
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://scottkillen.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://scottkillen.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 author:
   name: Scott Killen
