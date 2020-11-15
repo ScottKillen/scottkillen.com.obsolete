@@ -6,7 +6,7 @@ layout: default
   <div class="col-lg-8">
     <div class="mainheading">
       {% assign this_tag = page.tag-name | slugify %}
-      <h1 class="posttitle">Articles with the tag '{{ this_tag }}'</h1>
+      <h1 class="posttitle">Articles tagged with '{{ this_tag }}'</h1>
     </div>
     <div class="list-group post-list">
       {% for post in site.posts %}
