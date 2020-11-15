@@ -5,16 +5,7 @@
     content="width=device-width, initial-scale=1, shrink-to-fit=no"
   />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
-  {% seo %} {%- if page.layout == 'home' -%}
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "url": "https://www.scottkillen.com",
-      "logo": "{{ "/assets/img/logo.svg" | relative_url }}"
-    }
-  </script>
-  {%- endif -%} {%- include stylesheets.html -%}
+  {% seo %} {%- include stylesheets.html -%}
   <link
     rel="alternate"
     type="application/rss+xml"
