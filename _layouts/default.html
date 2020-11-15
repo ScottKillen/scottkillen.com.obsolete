@@ -20,7 +20,10 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css"
     rel="stylesheet"
   />
+  {%- comment -%}
   <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+  {%- endcomment -%}
+  <style>{%- include style.min.css -%}</style>
   <link
     rel="alternate"
     type="application/rss+xml"
