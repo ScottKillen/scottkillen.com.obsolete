@@ -4,6 +4,7 @@ title:  Light
 date:   2018-08-11
 tags: light poem praise god good-vs-evil
 image: /assets/img/bowen-island-sunset-620x.jpg
+comments: true
 ---
 
 I sit beneath Your radiance,<br />
