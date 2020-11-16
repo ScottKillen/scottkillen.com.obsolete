@@ -1,5 +1,5 @@
 ---
 layout: tag
-tag-name: god
+tag: god
 permalink: /tags/god/
 ---

@@ -1,5 +1,5 @@
 ---
 layout: tag
-tag-name: poem
+tag: poem
 permalink: /tags/poem/
 ---

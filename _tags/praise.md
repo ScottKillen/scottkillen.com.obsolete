@@ -1,5 +1,5 @@
 ---
 layout: tag
-tag-name: praise
+tag: praise
 permalink: /tags/praise/
 ---

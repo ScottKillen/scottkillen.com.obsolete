@@ -1,5 +1,5 @@
 ---
 layout: tag
-tag-name: light
+tag: light
 permalink: /tags/light/
 ---

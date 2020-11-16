@@ -1,5 +1,5 @@
 ---
 layout: tag
-tag-name: good-vs-evil
+tag: good-vs-evil
 permalink: /tags/good-vs-evil/
 ---
