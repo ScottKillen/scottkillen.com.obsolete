@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  Light
 date:   2018-08-11
 tags: light poem praise god good-vs-evil

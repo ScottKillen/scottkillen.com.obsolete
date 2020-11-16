@@ -1,5 +1,4 @@
 ---
-layout: page
 title: Comment Guidelines
 permalink: /guidelines/
 ---
