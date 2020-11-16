@@ -56,5 +56,26 @@ layout: default
         </ul>
       </div>
     </div>
+    {% assign firstCategory = page.categories | first %}
+    {% assign relatedPosts = site.categories[firstCategory] | sample: 4 %}
+    {% if relatedPosts.size > 1 %}
+    <div class="card my-4">
+      <h5 class="card-header">Related Posts<h5>
+      <div class="card-body">
+        <ul class="list-unstyled mb-0">
+        {% assign relatedCount = 0 %}
+        {% for related in relatedPosts %}
+            {% unless page.permalink == related.permalink %}
+              {% assign relatedCount = relatedCount | plus: 1 %}
+            <li><a href="{{related.permalink}}">{{ related.title }}</a></li>
+            {% endunless %}
+          {% if relatedCount == 3 %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
+        </ul>
+      </div>
+    </div>
+    {% endif %}
   </div>
 </div>
