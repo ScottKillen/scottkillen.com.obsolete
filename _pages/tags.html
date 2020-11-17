@@ -3,59 +3,18 @@ layout: tags
 title: Tags
 permalink: /tags/
 ---
-
-<!-- Resources -->
-<script src="https://cdn.amcharts.com/lib/4/core.js"></script>
-<script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
-<script src="https://cdn.amcharts.com/lib/4/plugins/wordCloud.js"></script>
-<script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
-
-<!-- Chart code -->
-<script>
-  am4core.ready(function() {
-
-  // Themes begin
-  am4core.useTheme(am4themes_animated);
-  // Themes end
-
-  var chart = am4core.create("chartdiv", am4plugins_wordCloud.WordCloud);
-  chart.fontFamily = "Courier New";
-  var series = chart.series.push(new am4plugins_wordCloud.WordCloudSeries());
-  series.randomness = 0.1;
-  series.rotationThreshold = 0.5;
-
-  series.data = [
-    {% for tag in site.tags %}
-    {% if forloop.first != true %},{% endif %}
+{% capture site_tags %}
+  [
+  {% for tag in site.tags %}
     {
-      "tag": "{{ tag[0] | slugify }}",
-      "count": "{{ tag[1].size }}"
+      "text":"{{ tag[0] }}",
+      "size":{{ tag[1].size }},
+      "url":"{{ site.url }}/tags/{{tag[0]}}"
     }
-    {% endfor %}
-  ];
-
-  series.dataFields.word = "tag";
-  series.dataFields.value = "count";
-
-  series.heatRules.push({
-   "target": series.labels.template,
-   "property": "fill",
-   "min": am4core.color("#0000CC"),
-   "max": am4core.color("#CC00CC"),
-   "dataField": "value"
-  });
-
-  {% assign suffix= "/tags/{word}" %}
-  series.labels.template.url = "{{ site.baseurl | append: suffix }}";
-  series.labels.template.urlTarget = "_self";
-  series.labels.template.tooltipText = "{word}: {value}";
-
-  var hoverState = series.labels.template.states.create("hover");
-  hoverState.properties.fill = am4core.color("#FF0000");
-  }); // end am4core.ready()
-</script>
-
-<!-- HTML -->
-<div id="chartdiv"></div>
+  {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+  ]
+{% endcapture %}
+{% include tag-cloud.html %}
 
 <p class="text-center lead">Click a tag.</p>
