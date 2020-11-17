@@ -1,5 +1,6 @@
 ---
 layout: tag
-tag: god
+title: Posts tagged with 'God'
+tag: God
 permalink: /tags/god/
 ---

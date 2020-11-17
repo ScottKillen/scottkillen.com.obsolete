@@ -1,7 +1,10 @@
 ---
 title:  Light
 date:   2018-08-11
-tags: light poem praise god good-vs-evil
+tags:
+ - light
+ - praise
+ - God
 image: /assets/img/bowen-island-sunset-620x.jpg
 comments: true
 ---
