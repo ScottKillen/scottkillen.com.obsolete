@@ -73,6 +73,11 @@ defaults:
       type: posts
     values:
       layout: post
+  - scope:
+      path: ""
+      type: redirects
+    values:
+      layout: redirect
 
 paginate: 6
 paginate_path: "/page/:num/"
