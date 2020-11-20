@@ -6,6 +6,7 @@ tags:
  - praise
  - God
 image: /assets/img/bowen-island-sunset-620x.jpg
+image_link: https://live.staticflickr.com/8307/29709176492_d7587b5c62_o.jpg
 comments: true
 ---
 
