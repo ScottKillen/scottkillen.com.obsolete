@@ -1,0 +1,14 @@
+{%- assign img = include.img -%}
+{%- assign class = include.class -%}
+{%- assign slug = include.slug -%}
+<picture>
+  <source
+    type="image/webp"
+    srcset="/assets/img/posts/{{ slug }}/{{ img }}.webp"
+  />
+  <img
+    {% if include.class %}class="{{ class }}"{% endif %}
+    src="/assets/img/posts/{{ slug }}/{{ img }}"
+    alt="{{ include.alt }}"
+  />
+</picture>

@@ -1,7 +1,10 @@
 <div class="card">
   <div class="view overlay">
-    <img class="card-img-top" src="{% if post.image contains "://" %}{{
-    post.image }}{% else %}{{ post.image | relative_url }}{% endif %}">
+    {%- if post.image contains "://" -%}
+    <img class="card-img-top" src="{{post.image }}">
+    {%- else -%}
+    {%- include picture.html img=post.image alt=post.title class="card-img-top" slug=post.slug -%}
+    {%- endif -%}
     <a href="{{ post.url | relative_url }}"
       ><div class="mask rgba-white-slight"></div
     ></a>

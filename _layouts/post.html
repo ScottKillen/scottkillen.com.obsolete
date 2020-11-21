@@ -32,9 +32,11 @@ layout: default
       <!-- Post Featured Image -->
       {%- if page.image -%}
       {%- if page.image_link -%}<a href="{{ page.image_link }}">{%- endif -%}
-      <img class="featured-image img-fluid mb-4" src="{% if
-      page.image contains "://" %}{{ page.image }}{% else %}{{ page.image | relative_url
-      }}{% endif %}" alt="{{ page.title }}">
+      {%- if page.image contains "://" -%}
+      <img class="featured-image img-fluid mb-4" src="{{ page.image }}" alt="{{ page.title }}">
+      {%- else -%}
+      {%- include picture.html img=page.image alt=page.title class="featured-image img-fluid mb-4" slug=page.slug -%}
+      {%- endif -%}
       {%- if page.image_link -%}</a>{%- endif -%}
       {%- endif -%}
       <!-- End Featured Image -->
