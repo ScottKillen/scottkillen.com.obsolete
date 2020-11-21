@@ -31,13 +31,18 @@ layout: default
 
       <!-- Post Featured Image -->
       {%- if page.image -%}
-      {%- if page.image_link -%}<a href="{{ page.image_link }}">{%- endif -%}
-      {%- if page.image contains "://" -%}
-      <img class="featured-image img-fluid mb-4" src="{{ page.image }}" alt="{{ page.title }}">
-      {%- else -%}
-      {%- include picture.html img=page.image alt=page.title class="featured-image img-fluid mb-4" slug=page.slug -%}
-      {%- endif -%}
-      {%- if page.image_link -%}</a>{%- endif -%}
+      <figure class="figure">
+        {%- if page.image_link -%}<a href="{{ page.image_link }}">{%- endif -%}
+        {%- if page.image contains "://" -%}
+        <img class="featured-image img-fluid" src="{{ page.image }}" alt="{{ page.title }}">
+        {%- else -%}
+        {%- include picture.html img=page.image alt=page.title class="featured-image img-fluid" slug=page.slug -%}
+        {%- endif -%}
+        {%- if page.image_link -%}</a>{%- endif -%}
+        {%- if page.caption -%}
+        <figcaption class="figure-caption text-right">{{ page.caption }}</figcaption>
+        {%- endif -%}
+      </figure>
       {%- endif -%}
       <!-- End Featured Image -->
 
