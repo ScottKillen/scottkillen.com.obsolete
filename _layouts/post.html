@@ -76,9 +76,9 @@ layout: default
         <ul class="list-unstyled mb-0">
         {% assign relatedCount = 0 %}
         {% for related in relatedPosts %}
-            {% unless page.permalink == related.permalink %}
+            {% unless page.url == related.url %}
               {% assign relatedCount = relatedCount | plus: 1 %}
-            <li><a href="{{related.permalink}}">{{ related.title }}</a></li>
+            <li><a href="{{related.url}}">{{ related.title }}</a></li>
             {% endunless %}
           {% if relatedCount == 3 %}
             {% break %}
