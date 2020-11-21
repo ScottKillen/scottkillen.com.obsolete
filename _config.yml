@@ -73,14 +73,12 @@ defaults:
       type: posts
     values:
       layout: post
-  - scope:
-      path: ""
-      type: redirects
-    values:
-      layout: redirect
 
 paginate: 6
 paginate_path: "/page/:num/"
+
+redirect_from:
+  json: false
 
 highlighter: rouge
 markdown: kramdown
@@ -91,6 +89,7 @@ kramdown:
 plugins:
   - jekyll-seo-tag
   - jekyll-paginate
+  - jekyll-redirect-from
 
 include:
   - _tags/
