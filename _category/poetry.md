@@ -1,4 +1,0 @@
----
-tag: poetry
-permalink: /poetry/
----

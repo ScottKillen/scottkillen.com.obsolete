@@ -49,20 +49,19 @@ social:
 
 permalink: /:categories/:title/
 
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  permalinks:
+    tag: '/tags/:name/'
+    category: '/:name/'
+
 collections:
-  category:
-    output: true
   pages:
-    output: true
-  redirects:
     output: true
 
 defaults:
-  - scope:
-      path: ""
-      type: category
-    values:
-      layout: category
   - scope:
       path: ""
       type: pages
@@ -87,12 +86,10 @@ kramdown:
     disable: true
 
 plugins:
+  - jekyll-archives
   - jekyll-seo-tag
   - jekyll-paginate
   - jekyll-redirect-from
-
-include:
-  - _tags/
 
 exclude:
   - _artwork/
