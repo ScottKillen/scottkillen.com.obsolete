@@ -19,6 +19,10 @@ group :jekyll_plugins do
   gem 'jekyll-seo-tag', '~> 2.7.1'
 end
 
+gem 'classifier-reborn'
+gem 'narray'
+gem 'gsl'
+
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
 platforms :mingw, :x64_mingw, :mswin, :jruby do

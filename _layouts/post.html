@@ -67,22 +67,14 @@ layout: default
         </ul>
       </div>
     </div>
-    {% assign firstCategory = page.categories | first %}
-    {% assign relatedPosts = site.categories[firstCategory] | sample: 4 %}
+    {% assign relatedPosts = site.related_posts | sample: 3 %}
     {% if relatedPosts.size > 1 %}
     <div class="card my-4">
       <h5 class="card-header">Related Posts<h5>
       <div class="card-body">
         <ul class="list-unstyled mb-0">
-        {% assign relatedCount = 0 %}
         {% for related in relatedPosts %}
-            {% unless page.url == related.url %}
-              {% assign relatedCount = relatedCount | plus: 1 %}
-            <li><a href="{{related.url}}">{{ related.title }}</a></li>
-            {% endunless %}
-          {% if relatedCount == 3 %}
-            {% break %}
-          {% endif %}
+          <li><a href="{{related.url}}">{{ related.title }}</a></li>
         {% endfor %}
         </ul>
       </div>
