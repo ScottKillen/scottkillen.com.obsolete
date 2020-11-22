@@ -57,6 +57,9 @@ jekyll-archives:
     tag: '/tags/:name/'
     category: '/:name/'
 
+feed:
+  excerpt_only: true
+
 collections:
   pages:
     output: true
