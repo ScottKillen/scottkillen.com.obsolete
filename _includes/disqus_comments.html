@@ -28,7 +28,11 @@
    * section where comments are supposed to appear.
    */
   window.addEventListener(
+    {%- if page.comments_on_load -%}
+    "load",
+    {%- else -%}
     "scroll",
+    {%- endif -%}
     function (e) {
       var currentScroll = document.scrollingElement.scrollTop;
       var disqus_target = document.getElementById("disqus_thread");
