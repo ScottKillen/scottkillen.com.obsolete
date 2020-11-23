@@ -23,16 +23,25 @@
     }
   }
 
+  {%- if page.comments_on_load -%}
+  /*
+   * Load disqus only when the document is fully loaded.
+   */
+  window.addEventListener(
+    "load",
+    function (e) {
+      load_disqus("scottkillen");
+      console.log("Disqus loaded.");
+    },
+    false
+  );
+  {%- else -%}
   /*
    * Load disqus only when the document is scrolled till the top of the
    * section where comments are supposed to appear.
    */
   window.addEventListener(
-    {%- if page.comments_on_load -%}
-    "load",
-    {%- else -%}
     "scroll",
-    {%- endif -%}
     function (e) {
       var currentScroll = document.scrollingElement.scrollTop;
       var disqus_target = document.getElementById("disqus_thread");
@@ -47,6 +56,7 @@
     },
     false
   );
+  {%- endif -%}
 </script>
 <noscript
   >Please enable JavaScript to view the
