@@ -61,7 +61,7 @@ layout: default
         {% for tag in sortedTags %}
           <li class="badge">
             {% assign tag_slug = tag | slugify %}
-            <a class="deco-none" href="{{site.baseurl}}/tags/{{ tag_slug }}" >{{ tag }}</a>
+            <a class="deco-none" href="{{ '/tags/' | append: tag_slug | relative_url }}" >{{ tag }}</a>
           </li>
         {% endfor %}
         </ul>
