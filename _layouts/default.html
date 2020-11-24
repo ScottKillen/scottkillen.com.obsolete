@@ -33,11 +33,7 @@
   <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
   {%- endcomment -%}
   <style>{%- include style.min.css -%}</style>
-  <link
-    rel="alternate"
-    type="application/rss+xml"
-    href="{{ site.url }}/feed.xml"
-  />
+  {% feed_meta %}
   <link
     rel="sitemap"
     type="application/xml"

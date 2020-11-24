@@ -93,6 +93,7 @@ kramdown:
 
 plugins:
   - jekyll-archives
+  - jekyll-feed
   - jekyll-paginate
   - jekyll-redirect-from
   - jekyll-seo-tag
