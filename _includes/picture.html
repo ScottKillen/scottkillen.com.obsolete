@@ -1,10 +1,17 @@
 {%- assign img = include.img -%}
 {%- assign class = include.class -%}
+{%- assign image_files = site.static_files | where: "image", true -%}
+{%- for image_file in image_files -%}
+  {%- if image_file.path contains img and image_file.extname == '.webp' -%}
+    {%- assign is_webp = true -%}
+    {%- break -%}
+  {%- endif -%}
+{%- endfor-%}
+
 <picture>
-  <source
-    type="image/webp"
-    srcset="{{ img }}.webp"
-  />
+  {%- if is_webp -%}
+  <source type="image/webp" srcset="{{ img }}.webp" />
+  {%- endif -%}
   <img
     {% if include.class %}class="{{ class }}"{% endif %}
     src="{{ img }}"
