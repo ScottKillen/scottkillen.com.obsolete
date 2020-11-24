@@ -36,7 +36,7 @@ layout: default
         {%- if page.image contains "://" -%}
         <img class="featured-image img-fluid" src="{{ page.image }}" alt="{{ page.title }}">
         {%- else -%}
-        {%- include picture.html img=page.image alt=page.title class="featured-image img-fluid" slug=page.slug -%}
+        {%- include picture.html img=page.image alt=page.title class="featured-image img-fluid" -%}
         {%- endif -%}
         {%- if page.image_link -%}</a>{%- endif -%}
         {%- if page.caption -%}

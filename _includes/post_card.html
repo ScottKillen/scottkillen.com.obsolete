@@ -3,7 +3,7 @@
     {%- if post.image contains "://" -%}
     <img class="card-img-top" src="{{post.image }}">
     {%- else -%}
-    {%- include picture.html img=post.image alt=post.title class="card-img-top" slug=post.slug -%}
+    {%- include picture.html img=post.image alt=post.title class="card-img-top" -%}
     {%- endif -%}
     <a href="{{ post.url | relative_url }}"
       ><div class="mask rgba-white-slight"></div
