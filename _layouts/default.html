@@ -107,7 +107,7 @@
           </li>
           {% endif %}
 
-          {% for item in site.data.navbar.links %}
+          {% for item in site.navbar.links %}
             <li {% if item.url == page.url %}class="nav-item active"{% else %}class="nav-item"{% endif %}>
               <a href="{{ item.url }}" class="nav-link">{{ item.title }}</a>
             </li>

@@ -26,8 +26,6 @@ url: "https://scottkillen.com" # the base hostname & protocol for your site, e.g
 
 author:
   name: Scott Killen
-  email: scott@scottkillen.com
-  picture: /assets/img/author.jpg
   twitter: scottkillen
 
 twitter:
@@ -48,16 +46,11 @@ social:
 
 permalink: /:categories/:title/
 
-jekyll-archives:
-  enabled:
-    - categories
-    - tags
-  permalinks:
-    tag: '/tags/:name/'
-    category: '/:name/'
-
-feed:
-  excerpt_only: true
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  syntax_highlighter_opts:
+    disable: true
 
 collections:
   pages:
@@ -79,17 +72,31 @@ defaults:
     values:
       image: true
 
+#Navbar links
+navbar:
+  links:
+    - title: Poetry
+      url: /poetry/
+    - title: Tags
+      url: /tags/
+
+# Plugin config
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  permalinks:
+    tag: '/tags/:name/'
+    category: '/:name/'
+
+feed:
+  excerpt_only: true
+
 paginate: 6
 paginate_path: "/page/:num/"
 
 redirect_from:
   json: false
-
-highlighter: rouge
-markdown: kramdown
-kramdown:
-  syntax_highlighter_opts:
-    disable: true
 
 plugins:
   - jekyll-archives
