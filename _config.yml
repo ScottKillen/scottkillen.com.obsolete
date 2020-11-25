@@ -55,6 +55,7 @@ kramdown:
 collections:
   pages:
     output: true
+    permalink: /:name/
 
 defaults:
   - scope:

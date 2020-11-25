@@ -1,6 +1,5 @@
 ---
 title: The Fine Print
-permalink: /fine-print/
 ---
 This blog is my personal site. The opinions expressed herein represent my own
 and not those of any employee, group, or organization.

@@ -1,6 +1,5 @@
 ---
 title: Comment Guidelines
-permalink: /guidelines/
 ---
 
 Welcome to my blog. I try my best to make sure that my posts' discussions are
