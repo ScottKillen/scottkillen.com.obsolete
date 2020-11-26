@@ -1,0 +1,32 @@
+---
+layout: non-article-page
+title: Photo Gallery
+---
+
+<div class="row row-cols-1 row-cols-md-4 row-cols-lg-6">
+  {%- assign photo_gallery = site.photo_gallery | sort: 'date' | reverse -%}
+  {%- for photo in photo_gallery -%}
+  <div class="col mb-4">
+    <div class="card">
+      <div class="view overlay">
+        {%- include picture.html img=photo.thumbnail alt=photo.caption
+        class="card-img-top" -%}
+        <a href="{{ photo.link }}" title="{{ photo.caption }}">
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+      <div class="card-body">
+        <h5 class="card-text">
+          <a href="{{ photo.link }}">{{ photo.caption }}</a>
+        </h5>
+        {%- if photo.description -%}
+        <p class="card-text">{{ photo.description }}</p>
+        {%- endif -%}
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">{{ photo.date | date: "%B %-d, %Y" }}</small>
+      </div>
+    </div>
+  </div>
+  {%- endfor -%}
+</div>

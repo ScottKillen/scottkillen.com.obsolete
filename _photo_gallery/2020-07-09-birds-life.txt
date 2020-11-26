@@ -1,0 +1,5 @@
+---
+caption: A Bird's Life
+thumbnail: /assets/img/gallery/birds-life.jpg
+link: https://live.staticflickr.com/65535/50095932321_58b673c14b_o.jpg
+---

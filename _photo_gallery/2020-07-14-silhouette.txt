@@ -1,0 +1,5 @@
+---
+caption: Silhouette at Dusk
+thumbnail: /assets/img/gallery/silhouette-dusk.jpg
+link: https://live.staticflickr.com/65535/50114725232_7deb600483_o.jpg
+---

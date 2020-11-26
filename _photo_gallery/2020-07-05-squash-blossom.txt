@@ -1,0 +1,5 @@
+---
+caption: Squash Blossom
+thumbnail: /assets/img/gallery/squash-blossom.jpg
+link: https://live.staticflickr.com/65535/50081729332_6217fb5dac_o.jpg
+---

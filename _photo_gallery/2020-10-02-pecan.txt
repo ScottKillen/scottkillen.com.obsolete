@@ -1,0 +1,5 @@
+---
+caption: A Ripe Pecan
+thumbnail: /assets/img/gallery/pecan.jpg
+link: https://live.staticflickr.com/65535/50409417182_e039533f76_o.jpg
+---

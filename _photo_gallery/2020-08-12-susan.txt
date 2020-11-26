@@ -1,0 +1,5 @@
+---
+caption: Black-eyed Susan
+thumbnail: /assets/img/gallery/susan.jpg
+link: https://live.staticflickr.com/65535/50220294931_f537a3537c_o.jpg
+---

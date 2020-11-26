@@ -1,0 +1,5 @@
+---
+caption: Pink in the City
+thumbnail: /assets/img/gallery/city-pink.jpg
+link: https://live.staticflickr.com/65535/50164721762_fd862e4932_o.jpg
+---

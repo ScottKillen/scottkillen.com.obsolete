@@ -1,0 +1,5 @@
+---
+caption: Dare to Be Different
+thumbnail: /assets/img/gallery/dare-to-be-different.jpg
+link: https://live.staticflickr.com/65535/50527281753_a6794a7402_o.jpg
+---

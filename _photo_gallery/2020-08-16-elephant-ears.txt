@@ -1,0 +1,5 @@
+---
+caption: Elephant Ears
+thumbnail: /assets/img/gallery/elephant-ears.jpg
+link: https://live.staticflickr.com/65535/50235334156_e169777bee_o.jpg
+---

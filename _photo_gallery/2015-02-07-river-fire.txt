@@ -1,0 +1,5 @@
+---
+caption: River of Fire
+thumbnail: /assets/img/gallery/river-fire.jpg
+link: https://live.staticflickr.com/8307/29709176492_d7587b5c62_o.jpg
+---

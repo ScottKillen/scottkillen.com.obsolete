@@ -1,0 +1,5 @@
+---
+caption: Gardenia
+thumbnail: /assets/img/gallery/gardenia.jpg
+link: https://live.staticflickr.com/65535/50073279141_8beb0b995e_o.jpg
+---
