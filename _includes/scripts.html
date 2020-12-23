@@ -30,3 +30,19 @@
 <script type="text/javascript" src="/assets/js/lightbox.min.js"></script>
 <link rel="stylesheet" href="/assets/css/lightbox.min.css" />
 {%- endif -%} {%- include new-window-fix.html -%}
+
+{%- if jekyll.environment == 'production' -%}
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-5CS9TYW8YT"
+></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-5CS9TYW8YT");
+</script>
+{%- endif -%}
