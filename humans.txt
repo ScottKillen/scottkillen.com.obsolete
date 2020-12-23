@@ -1,0 +1,18 @@
+---
+layout: none
+---
+
+/*TEAM*/
+
+    Author: Scott Killen
+    Contact: scott [at] scottkillen.com
+    Twitter: @scottkillen
+    From: Yonges Island, South Carolina, United States
+
+# SITE
+
+    Last Update: {{ site.time | date: "%Y/%m/%d" }}
+    Language: English
+    Standards: HTML5, CSS3
+    Components: JQuery, Bootstrap, FontAwesome
+    Software: VisualStudio Code, Jekyll
