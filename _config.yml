@@ -64,6 +64,7 @@ defaults:
       type: posts
     values:
       layout: post
+      comments: true
   - scope:
       path: "assets/img"
     values:
